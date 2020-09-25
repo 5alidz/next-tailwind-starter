@@ -1,15 +1,36 @@
 /* custom styles here */
-
-/* MAKE IT OPT IN [adhoc]
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111620;
-  }
+* {
+  position: relative;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-  }
+.truncate-over-two-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
-*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: #edf2f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+  border: 3px solid #edf2f7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
