@@ -1,1 +1,15 @@
 /* custom styles here */
+
+/* MAKE IT OPT IN [adhoc]
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111620;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+}
+*/

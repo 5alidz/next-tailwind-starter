@@ -1,5 +1,17 @@
 module.exports = {
-  purge: ['./pages/**/*.tsx', './pages/**/*.js', './components/**/*.tsx', './components/**/*.js', './styles/**/*.css'],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: [
+    './pages/**/*.tsx',
+    './pages/**/*.js',
+    './components/**/*.tsx',
+    './components/**/*.js',
+    './design/**/*.ts',
+    './design/**/*.js',
+    './styles/**/*.css',
+  ],
   theme: {
     extend: {
       gridRow: {
@@ -11,17 +23,17 @@ module.exports = {
         'span-12': 'span 12 / span 12',
       },
       gridTemplateRows: {
-        '7': 'repeat(7, minmax(0, 1fr))',
-        '8': 'repeat(8, minmax(0, 1fr))',
-        '9': 'repeat(9, minmax(0, 1fr))',
-        '10': 'repeat(10, minmax(0, 1fr))',
-        '11': 'repeat(11, minmax(0, 1fr))',
-        '12': 'repeat(12, minmax(0, 1fr))',
+        7: 'repeat(7, minmax(0, 1fr))',
+        8: 'repeat(8, minmax(0, 1fr))',
+        9: 'repeat(9, minmax(0, 1fr))',
+        10: 'repeat(10, minmax(0, 1fr))',
+        11: 'repeat(11, minmax(0, 1fr))',
+        12: 'repeat(12, minmax(0, 1fr))',
       },
       spacing: {
-        '72': '18rem',
-        '84': '21rem',
-        '96': '24rem',
+        72: '18rem',
+        84: '21rem',
+        96: '24rem',
       },
     },
   },
