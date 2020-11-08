@@ -59,5 +59,5 @@ module.exports = {
     backgroundColor: ['responsive', 'hover', 'focus', 'active', 'disabled'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'disabled'],
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/custom-forms')],
 };
