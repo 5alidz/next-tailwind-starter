@@ -9,9 +9,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <link rel='stylesheet' type='text/css' href='/css/nprogress.css' />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

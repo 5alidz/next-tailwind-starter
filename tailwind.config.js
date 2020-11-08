@@ -7,6 +7,7 @@ module.exports = {
     './pages/**/*.tsx',
     './pages/**/*.js',
     './components/**/*.tsx',
+    './components/**/*.ts',
     './components/**/*.js',
     './design/**/*.ts',
     './design/**/*.tsx',
@@ -15,6 +16,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        body: [
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Helvetica Neue',
+          'Arial',
+          'Noto Sans',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji',
+        ],
+      },
       gridRow: {
         'span-7': 'span 7 / span 7',
         'span-8': 'span 8 / span 8',

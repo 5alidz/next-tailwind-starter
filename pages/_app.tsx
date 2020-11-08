@@ -1,5 +1,6 @@
 import '../styles/tailwind.css';
 import '../styles/main.css';
+import '../styles/nprogress.css';
 
 import { AppProps } from 'next/app';
 import Nprogress from 'nprogress';
