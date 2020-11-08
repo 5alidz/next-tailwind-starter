@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@5alid/cls/-/cls-1.0.4.tgz#e3d5b5194fccd125808b69edde22befd90a13141"
   integrity sha512-gVaI9M1DWGPuDunf9lBeD4bg87595HW8umKTRyuaz2i1uhW/wKsaL3r5e1V+mu3w7OmhnARi6e41gfUKt4P01A==
 
+"@5alid/react-hooks@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@5alid/react-hooks/-/react-hooks-0.1.0.tgz#d48f5bd31e74576dc80389f5684dc5243c97ab48"
+  integrity sha512-G5HWSWapty5mT01rVPkoUa4squZ0xRAQSDIpkE/i2N2Wy/XS4ZAzPpTIr7H/OZrWFhZmBpLU/lzKjj+e9CGOMw==
+
 "@5alid/schema@^0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@5alid/schema/-/schema-0.1.5.tgz#f506e14ccf1cc9b7a6a83df9418e18583882ece7"
