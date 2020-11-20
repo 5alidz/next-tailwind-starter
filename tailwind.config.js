@@ -1,8 +1,7 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
+  darkMode: 'class',
   purge: [
     './pages/**/*.tsx',
     './pages/**/*.js',
@@ -15,6 +14,30 @@ module.exports = {
     './styles/**/*.css',
   ],
   theme: {
+    colors: {
+      // bgray: colors.blueGray,
+      // cgray: colors.coolGray,
+      gray: colors.gray,
+      // tgray: colors.trueGray,
+      // wgray: colors.warmGray,
+      red: colors.red,
+      orange: colors.orange,
+      amber: colors.amber,
+      // yellow: colors.yellow,
+      // lime: colors.lime,
+      // green: colors.green,
+      emerald: colors.emerald,
+      teal: colors.teal,
+      cyan: colors.cyan,
+      // blue: colors.blue,
+      sky: colors.lightBlue,
+      // indigo: colors.indigo,
+      violet: colors.violet,
+      // purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      // pink: colors.pink,
+      rose: colors.rose,
+    },
     extend: {
       fontFamily: {
         body: [
@@ -48,16 +71,11 @@ module.exports = {
         11: 'repeat(11, minmax(0, 1fr))',
         12: 'repeat(12, minmax(0, 1fr))',
       },
-      spacing: {
-        72: '18rem',
-        84: '21rem',
-        96: '24rem',
-      },
     },
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'active', 'disabled'],
+    backgroundColor: ['responsive', 'hover', 'focus', 'active', 'disabled', 'dark'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'disabled'],
   },
-  plugins: [require('@tailwindcss/custom-forms')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
