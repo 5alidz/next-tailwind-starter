@@ -1,4 +1,8 @@
 /* custom styles here */
+:root {
+  --colors-nprogress: #29d;
+}
+
 * {
   position: relative;
 }

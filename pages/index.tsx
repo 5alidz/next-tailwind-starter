@@ -1,51 +1,37 @@
-import cls from '@5alid/cls';
-import { Menu, Transition } from '@headlessui/react';
+import Link from 'next/link';
+import { Article } from 'components/Article';
 
 export default function Home() {
   return (
     <main className='max-w-4xl mx-auto py-8'>
-      <Menu>
-        {({ open }) => (
-          <>
-            <Menu.Button className='px-4 py-1 border rounded font-semibold focus:outline-none'>More</Menu.Button>
-            <Transition
-              show={open}
-              enter='transition duration-100 ease-out'
-              enterFrom='transform scale-95 opacity-0'
-              enterTo='transform scale-100 opacity-100'
-              leave='transition duration-75 ease-out'
-              leaveFrom='transform scale-100 opacity-100'
-              leaveTo='transform scale-95 opacity-0'
-              className='border max-w-sm p-4 mt-4 rounded absolute'
-            >
-              <Menu.Items className='grid focus:outline-none'>
-                <Menu.Item as='div'>
-                  {({ active }) => (
-                    <a className={cls('hover:bg-gray-500', [active, 'text-sky-500'])} href='#'>
-                      Account settings
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a className={`${active && 'bg-blue-500'}`} href='#'>
-                      Documentation
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item disabled>
-                  <span className='opacity-75'>Invite a friend (coming soon!)</span>
-                </Menu.Item>
-              </Menu.Items>
-            </Transition>
-          </>
-        )}
-      </Menu>
-      <div className='p-4 flex items-center justify-center w-full h-screen'>
-        <div className='prose'>
-          <h1>Hello world!</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, praesentium!</p>
-        </div>
+      <div className='p-4 flex'>
+        <Link href='/'>
+          <a className='mr-4'>home</a>
+        </Link>
+        <Link href='/about'>
+          <a>about</a>
+        </Link>
+      </div>
+      <div className='px-4 py-8 flex items-center justify-center w-full'>
+        <Article>
+          <h4>Home</h4>
+          <h1>Landing Page</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil quibusdam doloribus corporis
+            ratione. Explicabo, expedita eligendi. Eveniet natus dolorem perspiciatis incidunt. Obcaecati maiores
+            quaerat quisquam commodi autem soluta <a href='#'>see their website</a> aliquid.
+          </p>
+          <code>npm install your-new-package</code>
+          <pre>
+            <code>
+              {`
+async function fetchData(url) {
+  return await (await fetch(url)).json();
+}
+            `.trim()}
+            </code>
+          </pre>
+        </Article>
       </div>
     </main>
   );
