@@ -5933,6 +5933,11 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tiny-schema-validator@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/tiny-schema-validator/-/tiny-schema-validator-0.1.1.tgz#6377ea51108c0034d61ce62b30a8d59f410287f4"
+  integrity sha512-5u+kVCBm8vfDu5KI7QxWQKCJrHHT20xrj/lJ4tT+rGug7wUi4tZWnLyy0Yp0eXdBWDvTJMdFMr6KN2RbIjWNBQ==
+
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -6313,6 +6318,11 @@ write@1.0.3:
   integrity sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
   dependencies:
     mkdirp "^0.5.1"
+
+xcls@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/xcls/-/xcls-0.1.0.tgz#56e8e52dba2ed4e7a328115c46640af96d2e5f26"
+  integrity sha512-0UNsCiC4513v04zj5veYEyH5l4tAe0OYZXTP8T/RofQZRwQIiiVyRnTtGnk4K+hRu5n17sLFPMfayy/f3HNJDw==
 
 xtend@^4.0.0, xtend@^4.0.2, xtend@~4.0.1:
   version "4.0.2"

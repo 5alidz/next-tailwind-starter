@@ -9,16 +9,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@5alid/cls": "^1.0.4",
     "@5alid/react-hooks": "^0.1.0",
-    "@5alid/schema": "^0.1.5",
     "immer": "^7.0.9",
     "next": "^10.0.0",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.11.3",
-    "swr": "^0.3.9"
+    "swr": "^0.3.9",
+    "tiny-schema-validator": "^0.1.1",
+    "xcls": "^0.1.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.2.1",
