@@ -2,17 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   darkMode: 'class',
-  purge: [
-    './pages/**/*.tsx',
-    './pages/**/*.js',
-    './components/**/*.tsx',
-    './components/**/*.ts',
-    './components/**/*.js',
-    './design/**/*.ts',
-    './design/**/*.tsx',
-    './design/**/*.js',
-    './styles/**/*.css',
-  ],
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}', './design/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
       // bgray: colors.blueGray,
